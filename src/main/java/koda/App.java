@@ -19,22 +19,12 @@ public class App {
         // employees.add(new Employee("KR002", "Budi", 5000000));
         // employees.add(new Employee("KR003", "Citra", 6000000));
 
-        // System.out.println("Employee List");
-        // for (Employee employee : employees) {
-        // System.out.println(employee.getAccount() + " - " + employee.getOwner() + " -
-        // " + employee.getBalance());
-        // }
-
         // Map
-        // Map<String, Employee> employees = new LinkedHashMap<>();
+        // Map<Integer, Employee> employees = new LinkedHashMap<>();
 
-        // Employee employee1 = new Employee("KR001", "Andi", 7000000);
-        // Employee employee2 = new Employee("KR002", "Budi", 5000000);
-        // Employee employee3 = new Employee("KR003", "Citra", 6000000);
-
-        // employees.put(employee1.getAccount(), employee1);
-        // employees.put(employee2.getAccount(), employee2);
-        // employees.put(employee3.getAccount(), employee3);
+        // employees.put(1, new Employee("KR001", "Andi", 7000000));
+        // employees.put(2, new Employee("KR002", "Budi", 5000000));
+        // employees.put(3, new Employee("KR003", "Citra", 6000000));
 
         // for (Employee employee : employees.values()) {
         // System.out.println(employee.getAccount() + " - " + employee.getOwner() + " -
@@ -42,29 +32,18 @@ public class App {
         // }
 
         // Set
-        // // Set<Employee> employees = new HashSet<>();
-        // Employee employee1 = new Employee("KR001", "Andi", 7000000);
-        // Employee employee2 = new Employee("KR002", "Budi", 5000000);
-        // Employee employee3 = new Employee("KR003", "Citra", 6000000);
-
-        // employees.add(employee1);
-        // employees.add(employee2);
-        // employees.add(employee3);
-        // for (Employee employee : employees) {
-        // System.out.println(employee.getAccount() + " - " + employee.getOwner() + " -
-        // " + employee.getBalance());
-        // }
+        // Set<Employee> employees = new HashSet<>();
+        // employees.add(new Employee("KR001", "Andi", 7000000));
+        // employees.add(new Employee("KR002", "Budi", 5000000));
+        // employees.add(new Employee("KR003", "Citra", 6000000));
 
         // Queue
         Queue<Employee> employees = new ArrayDeque<>();
-        Employee employee1 = new Employee("KR001", "Andi", 7000000);
-        Employee employee2 = new Employee("KR002", "Budi", 5000000);
-        Employee employee3 = new Employee("KR003", "Citra", 6000000);
+        employees.offer(new Employee("KR001", "Andi", 7000000));
+        employees.offer(new Employee("KR002", "Budi", 5000000));
+        employees.offer(new Employee("KR003", "Citra", 6000000));
 
-        employees.offer(employee1);
-        employees.offer(employee2);
-        employees.offer(employee3);
-
+        // Printing
         for (Employee employee : employees) {
             System.out.println(employee.getAccount() + " - " + employee.getOwner() + " - " + employee.getBalance());
         }
